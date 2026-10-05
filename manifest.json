@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub PR Image Modal",
+  "version": "1.0.0",
+  "description": "Open images in GitHub pull requests in a modal instead of a new tab.",
+  "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
